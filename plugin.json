@@ -1,0 +1,28 @@
+{
+	"id": "nodebb-plugin-portal-header",
+	"name": "Portal Mark Custom Header",
+	"description": "Allows you to define a Custom Header for Protal Mark",
+	"url": "https://github.com/erlgo/nodebb-plugin-portal-header",
+	"library": "./library.js",
+	"hooks": [{
+		"hook": "static:app.load",
+		"method": "init"
+	}, {
+		"hook": "static:app.load",
+		"method": "init"
+	}, {
+		"hook": "filter:widget.render:userCPanel",
+		"method": "renderUserCPanel"
+	}, {
+		"hook": "filter:admin.header.build",
+		"method": "buildAdminHeader"
+	}, {
+		"hook": "filter:header.build",
+		"method": "buildHeader"
+	}],
+	"scripts": [
+		"static/lib/client/",
+		"static/lib/loader.js"
+	],
+	"templates": "./static/templates"
+}

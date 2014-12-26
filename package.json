@@ -1,0 +1,30 @@
+{
+  "name": "nodebb-plugin-portal-header",
+  "version": "0.0.1",
+  "description": "Allows you to define a Custom Header for NodeBB Protal Mark",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erlgo/nodebb-plugin-portal-header"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "protal",
+    "header",
+    "custom"
+  ],
+  "author": {
+    "name": "erlgo",
+    "email": "erlgo@ipc6.com"
+  },
+  "nbbpm": {
+    "compatibility": "^0.6.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erlgo/nodebb-plugin-portal-header/issues"
+  },
+  "readme": "",
+  "readmeFilename": "README.md"
+}
