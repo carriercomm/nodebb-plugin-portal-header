@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-portal-header",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Allows you to define a Custom Header for NodeBB Protal Mark",
   "main": "library.js",
   "repository": {
