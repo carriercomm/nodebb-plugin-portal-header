@@ -69,7 +69,7 @@ define('portal/header/filterheader', function () {
 		cache.forEach(function (item) {
 			if ($('.user-cpanel').length > 0) {
 				$('.user-cpanel').append(item);
-			} else if (filtermap['/' + check] && !item.hasClass('cpanel-only')) {
+			} else if (check == 'forum' || filtermap['/' + check] && !item.hasClass('cpanel-only')) {
 				$('#main-nav').append(item);
 			} else {
 				item.remove();
