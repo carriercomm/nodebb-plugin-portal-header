@@ -8,8 +8,8 @@
 		"hook": "static:app.load",
 		"method": "init"
 	}, {
-		"hook": "static:app.load",
-		"method": "init"
+		"hook": "filter:widgets.getWidgets",
+		"method": "getWidgets"
 	}, {
 		"hook": "filter:widget.render:userCPanel",
 		"method": "renderUserCPanel"
