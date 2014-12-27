@@ -13,7 +13,12 @@
           <input type="text" class="form-control" name="header-title" />
         </div>
         <div class="input-group">
-          <label> Style Class </label>
+          <label> Style Class <p>option class:
+            <br /><small>'show-title': show title always</small>
+            <br /><small>'force': override a header same href</small>
+            <br /><small>'cpanel': show at user-cpanel</small>
+            <br /><small>'cpanel-only': disable at forum paths</small>
+          </p></label>
           <input type="text" class="form-control" name="header-class" />
         </div>
         <div class="input-group">
@@ -149,6 +154,7 @@
       if(idx > 0){
         $('tbody.header-list > tr:eq('+idx+')').insertBefore(  $('tbody.header-list > tr:eq('+(idx-1)+')'));
         updateSelected();
+        save(getSettings());
       }
       return false;
     });
@@ -157,6 +163,7 @@
       if(idx < $('tbody.header-list > tr').length-1){
         $('tbody.header-list > tr:eq('+(idx+1)+')').insertBefore(  $('tbody.header-list > tr:eq('+idx+')'));
         updateSelected();
+        save(getSettings());
       }
       return false;
     });

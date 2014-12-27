@@ -1,15 +1,14 @@
 "use strict";
 require(['portal/header/filterheader'],function(filterheader){
-  console.log('init')
   filterheader.parse();
 });
 $(window).on('action:ajaxify.end', function (event, data) {
   require(['portal/header/filterheader'],function(filterheader){
-    filterheader.show(data.url.split('/')[0]);
+    filterheader.show(data.url);
   });
 });
 $(window).on('action:ajaxify.end', function (event, data) {
   require(['portal/header/filterheader'],function(filterheader){
-    filterheader.show(data.url.split('/')[0]);
+    filterheader.show(data.url);
   });
 });
