@@ -31,6 +31,8 @@ define('portal/header/filterheader', function () {
 		}
 	}
 	Filter.parse = function () {
+		if(Filter.parsed)return;
+		Filter.parsed = true;
 		var oldheader = {};
 		$('#main-nav li a').each(function () {
 			var $this = $(this);
